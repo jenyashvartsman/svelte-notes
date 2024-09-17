@@ -1,24 +1,16 @@
 <script lang="ts">
+  import Footer from "./lib/components/footer/Footer.svelte";
+  import NotesGrid from "./lib/components/notes-grid/NotesGrid.svelte";
+  import { notesData } from "./lib/data/notes.data";
+
+  const notes = notesData;
 </script>
 
-<main class="responsive">notes</main>
+<main class="responsive">
+  <NotesGrid {notes} />
+</main>
 
-<footer>
-  <nav>
-    <button class="circle transparent">
-      <i>check_box</i>
-    </button>
-    <button class="circle transparent">
-      <i>image</i>
-    </button>
-
-    <div class="max"></div>
-
-    <button class="square round extra">
-      <i>add</i>
-    </button>
-  </nav>
-</footer>
+<Footer />
 
 <style>
 </style>
