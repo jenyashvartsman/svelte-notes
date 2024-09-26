@@ -17,3 +17,12 @@
     </button>
   </nav>
 </footer>
+
+<style>
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+</style>

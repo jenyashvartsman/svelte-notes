@@ -6,11 +6,15 @@
   const notes = notesData;
 </script>
 
-<main class="responsive">
+<main class="responsive app__main">
   <NotesGrid {notes} />
 </main>
 
 <Footer />
 
 <style>
+  .app__main {
+    padding: 2rem 1rem;
+    margin-bottom: 80px;
+  }
 </style>
